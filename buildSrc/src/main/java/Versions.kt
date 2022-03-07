@@ -35,7 +35,7 @@ object NetworkVersions {
 
 object BuildPluginsVersions {
     const val KOTLIN = KotlinVersions.STANDARD_LIBRARY
-    const val BUILDGRADLE = "7.0.4"
+    const val BUILDGRADLE = "7.1.2"
     const val HILT = "2.40.5"
     const val NAVIGATION = "2.4.0"
 }
