@@ -27,8 +27,8 @@
         <item name="prefixTextColor">@color/taBlueWithAHintOfPurpleFaded</item>
         <item name="hintTextColor">@color/taBlueGrey</item>
         <item name="taPrimaryTextColor">@color/taBlueWithAHintOfPurple</item>
-        <item name="taWhiteColor">@color/taWhite</item>
-        <item name="taBlackColor">@color/taBlack</item>
+        <item name="taWhiteColor">@color/taBlack</item>
+        <item name="taBlackColor">@color/taWhite</item>
     </style>
 
     <style name="taCustomActivityAnimation" parent="@android:style/Animation.Activity">

@@ -1,3 +1,5 @@
+import java.util.*
+
 plugins {
     id(BuildPluginsConfig.androidApplication)
     id(BuildPluginsConfig.androidHilt)
@@ -18,6 +20,23 @@ android {
         versionName = BuildAndroidConfig.VERSION_NAME
 
         testInstrumentationRunner = BuildAndroidConfig.androidTestInstrumentation
+        val remoteProperties = File(project.rootDir, "buildSrc/remote.properties")
+        val properties = Properties()
+        if (remoteProperties.exists()) {
+            remoteProperties.inputStream().use { properties.load(it) }
+            try {
+                if (properties.containsKey("BASE_URL")) {
+                    buildConfigField(
+                        "String",
+                        "BASE_URL",
+                        properties["BASE_URL"].toString()
+                    )
+                }
+
+            } catch (e: Exception) {
+                System.err.println(e.printStackTrace())
+            }
+        }
     }
 
     signingConfigs {
