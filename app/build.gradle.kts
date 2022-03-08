@@ -130,6 +130,7 @@ dependencies {
     implementation(DependenciesManager.hiltImplementation)
     implementation(DependenciesManager.navigationImplementation)
     implementation(DependenciesManager.networkImplementation)
+    implementation(DependenciesManager.roomImplementation)
     testImplementation(DependenciesManager.testingImplementation)
     androidTestImplementation(DependenciesManager.androidTestImplementation)
     kapt(HiltDaggerDependencies.DAGGER_COMPILER)

@@ -82,6 +82,12 @@ object NetworkDependencies {
     const val GLIDE_COMPILER = "com.github.bumptech.glide:compiler:${NetworkVersions.GLIDE}"
 }
 
+object RoomDependencies {
+    const val ROOM_RUNTIME = "androidx.room:room-runtime:${AndroidXVersions.ROOM_VERSION}"
+    const val ROOM_COMPILER = "androidx.room:room-compiler:${AndroidXVersions.ROOM_VERSION}"
+    const val ROOM_KTX = "androidx.room:room-ktx:${AndroidXVersions.ROOM_VERSION}"
+}
+
 object HiltDaggerDependencies {
     // Hilt Dagger DI
     const val DAGGER_HILT = "com.google.dagger:hilt-android:${HiltDaggerVersion.HILT_DI}"

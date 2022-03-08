@@ -12,6 +12,7 @@ object AndroidXVersions {
     const val SWIPE = "1.1.0"
     const val CRYPT = "1.1.0-alpha03"
     const val VIEWPAGER2 = "1.0.0"
+    const val ROOM_VERSION = "2.4.2"
 
 }
 

@@ -1,13 +1,19 @@
 package com.task.trendy.data.dtos.responsedtos
 
+import androidx.room.Embedded
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
-
+@Entity(tableName = "git_profiles")
 data class Profile(
+    @PrimaryKey
     @SerializedName("id")
     var id: Int? = null,
+    @Embedded
     @SerializedName("license")
     var license: License? = null,
+    @Embedded
     @SerializedName("owner")
     var owner: Owner? = null,
     @SerializedName("allow_forking")

@@ -18,6 +18,11 @@ object DependenciesManager {
         add(NetworkDependencies.RETROFIT_CONVERTOR_GSON)
     }
 
+    val roomImplementation = arrayListOf<String>().apply {
+        add(RoomDependencies.ROOM_RUNTIME)
+        add(RoomDependencies.ROOM_KTX)
+    }
+
     val lifeCycleKtxImplementation = arrayListOf<String>().apply {
         add(LifeCycleKtxDependencies.CORE_KTX)
         add(LifeCycleKtxDependencies.Collection_KTX)
