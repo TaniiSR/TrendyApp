@@ -26,7 +26,7 @@
         <!-- Text Colors -->
         <item name="prefixTextColor">@color/taBlueWithAHintOfPurpleFaded</item>
         <item name="hintTextColor">@color/taBlueGrey</item>
-        <item name="taPrimaryTextColor">@color/taBlueWithAHintOfPurple</item>
+        <item name="taGreyTextColor">@color/taGrey</item>
         <item name="taWhiteColor">@color/taWhite</item>
         <item name="taBlackColor">@color/taBlack</item>
     </style>

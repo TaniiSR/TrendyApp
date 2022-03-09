@@ -19,6 +19,14 @@
         <item name="android:letterSpacing">0</item>
     </style>
 
+    <style name="Trendy.Widget.TextView.Grey" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/Trendy.TextAppearance.TextView</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?attr/taGreyTextColor</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
     <style name="Trendy.Widget.TextView.BlackColor.XLarge" parent="Trendy.Widget.TextView.Black">
         <item name="android:textSize">@dimen/ta_text_size_h3</item>
     </style>
@@ -40,4 +48,23 @@
     </style>
 
 
+    <style name="Trendy.Widget.TextView.GreyColor.XLarge" parent="Trendy.Widget.TextView.Grey">
+        <item name="android:textSize">@dimen/ta_text_size_h3</item>
+    </style>
+
+    <style name="Trendy.Widget.TextView.GreyColor.Large" parent="Trendy.Widget.TextView.Grey">
+        <item name="android:textSize">@dimen/ta_text_size_h5</item>
+    </style>
+
+    <style name="TrendyWidget.TextView.GreyColor.Medium" parent="Trendy.Widget.TextView.Grey">
+        <item name="android:textSize">@dimen/ta_text_size_h6</item>
+    </style>
+
+    <style name="Trendy.Widget.TextView.GreyColor.Small" parent="Trendy.Widget.TextView.Grey">
+        <item name="android:textSize">@dimen/ta_text_size_h7</item>
+    </style>
+
+    <style name="Trendy.Widget.TextView.GreyColor.XSmall" parent="Trendy.Widget.TextView.Grey">
+        <item name="android:textSize">@dimen/ta_text_size_h8</item>
+    </style>
 </resources>

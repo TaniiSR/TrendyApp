@@ -1,3 +1,4 @@
 <resources>
-
+    <!--    Dashboard Screen-->
+    <string name="screen_dashboard_display_text_tb_title">Trending</string>
 </resources>

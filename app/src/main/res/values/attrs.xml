@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <attr name="taPrimaryTextColor" format="reference" />
-    <attr name="taPrimaryLightText" format="reference" />
+    <attr name="taGreyTextColor" format="reference" />
     <attr name="taWhiteColor" format="reference" />
     <attr name="taBlackColor" format="reference" />
 

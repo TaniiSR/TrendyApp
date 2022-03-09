@@ -32,7 +32,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:src="@drawable/ic_back_arrow_left"
+            tools:src="@drawable/ta_ic_back_arrow_left"
             tools:tint="#5E35B1" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -72,7 +72,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:src="@drawable/ic_back_arrow_left"
+                tools:src="@drawable/ta_ic_back_arrow_left"
                 tools:tint="#5E35B1"
                 tools:visibility="visible" />
         </androidx.constraintlayout.widget.ConstraintLayout>

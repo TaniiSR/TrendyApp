@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:paddingHorizontal="@dimen/ta_margin_normal"
+    android:paddingTop="@dimen/ta_margin_normal">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivProfile"
+        style="@style/shapeAppearance.App.CircleImageView.MediumComponent"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="@dimen/ta_margin_normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvUserName"
+        style="@style/Trendy.Widget.TextView.GreyColor.Large"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ta_margin_medium"
+        android:layout_marginEnd="@dimen/ta_margin_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/ivProfile"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Jhon Doe" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvRepoName"
+        style="@style/Trendy.Widget.TextView.BlackColor.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ta_margin_medium"
+        android:layout_marginTop="@dimen/ta_margin_small"
+        android:layout_marginEnd="@dimen/ta_margin_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/ivProfile"
+        app:layout_constraintTop_toBottomOf="@id/tvUserName"
+        tools:text="Repository Name" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvDescription"
+        style="@style/Trendy.Widget.TextView.GreyColor.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ta_margin_medium"
+        android:layout_marginTop="@dimen/ta_margin_small"
+        android:layout_marginEnd="@dimen/ta_margin_normal"
+        android:maxLines="2"
+        android:visibility="gone"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/ivProfile"
+        app:layout_constraintTop_toBottomOf="@id/tvRepoName"
+        tools:text="Description of the repository" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llFooter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/ivProfile"
+        app:layout_constraintTop_toBottomOf="@id/tvDescription">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/white"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            app:shapeAppearance="@style/shapeAppearance.App.CircleImageView.MediumComponent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvLanguage"
+            style="@style/Trendy.Widget.TextView.BlackColor.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/ta_margin_normal"
+            tools:text="Python" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/ta_margin_medium"
+            app:shapeAppearance="@style/shapeAppearance.App.CircleImageView.MediumComponent"
+            app:srcCompat="@drawable/ta_ic_star" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvStarCount"
+            style="@style/Trendy.Widget.TextView.BlackColor.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/ta_margin_normal"
+            tools:text="Python" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/ta_margin_medium"
+        android:background="@color/taGrey"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llFooter" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
