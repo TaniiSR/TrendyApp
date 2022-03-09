@@ -16,7 +16,7 @@
         <item name="tbTitleStyle">@style/Trendy.Widget.TextView.BlackColor.Large</item>
         <!-- Primary brand color. -->
         <item name="colorPrimaryDark">@color/taDarkSlateBlue</item>
-        <item name="android:colorBackground">@color/taGreyLight</item>
+        <item name="android:colorBackground">@color/taBlack</item>
 
         <item name="android:windowLightStatusBar" tools:ignore="NewApi">false</item>
         <item name="android:layoutDirection">ltr</item>
