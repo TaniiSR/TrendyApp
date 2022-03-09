@@ -7,7 +7,7 @@ import androidx.viewbinding.ViewBinding
 import com.task.trendy.utils.base.interfaces.OnItemClickListener
 
 
-abstract class BaseBindingRecyclerAdapter<T : Any, VH : RecyclerView.ViewHolder>() :
+abstract class BaseRecyclerAdapter<T : Any, VH : RecyclerView.ViewHolder>() :
     RecyclerView.Adapter<VH>() {
 
     var onItemClickListener: OnItemClickListener? = null

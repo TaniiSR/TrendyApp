@@ -74,30 +74,31 @@ class DashboardActivity : BaseActivity<ActivityDashboardBinding, IDashboardVM>()
 
     private fun setErrorView() {
         mViewBinding.errorView.visible()
-        setShimmerLoading(false)
         mViewBinding.recyclerView.gone()
+        hideShimmerLoading()
     }
 
     private fun setSuccessView() {
         mViewBinding.recyclerView.visible()
-        setShimmerLoading(false)
         mViewBinding.errorView.gone()
+        hideShimmerLoading()
     }
 
     private fun setLoadingView() {
         mViewBinding.errorView.gone()
         mViewBinding.recyclerView.gone()
-        setShimmerLoading(true)
+        showShimmerLoading()
     }
 
-    private fun setShimmerLoading(isShow: Boolean) {
-        if (isShow) {
-            mViewBinding.shimmerLayout.shimmerFrameLayout.visible()
-            mViewBinding.shimmerLayout.shimmerFrameLayout.startShimmer()
-        } else {
-            mViewBinding.shimmerLayout.shimmerFrameLayout.gone()
-            mViewBinding.shimmerLayout.shimmerFrameLayout.stopShimmer()
-        }
+    private fun showShimmerLoading() {
+        mViewBinding.shimmerLayout.shimmerFrameLayout.visible()
+        mViewBinding.shimmerLayout.shimmerFrameLayout.startShimmer()
+
+    }
+
+    private fun hideShimmerLoading() {
+        mViewBinding.shimmerLayout.shimmerFrameLayout.gone()
+        mViewBinding.shimmerLayout.shimmerFrameLayout.stopShimmer()
     }
 
     private fun viewModelObservers() {

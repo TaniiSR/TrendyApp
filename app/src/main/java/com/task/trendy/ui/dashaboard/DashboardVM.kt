@@ -40,7 +40,6 @@ class DashboardVM @Inject constructor(
                         _repoLists.value = response.data.repos ?: listOf()
                         _uiState.value = UIEvent.Success
                     }
-
                     is ApiResponse.Error -> {
                         _repoLists.value = listOf()
                         _uiState.value = UIEvent.Error(response.error.message)

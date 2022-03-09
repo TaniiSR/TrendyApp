@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:tbStartIconVisibility="false"
+        app:tbBottomLineVisibility="true"
         app:tbTitleText="@string/screen_dashboard_display_text_tb_title" />
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout

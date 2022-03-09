@@ -96,7 +96,8 @@
             android:id="@+id/vBottomLine"
             android:layout_width="match_parent"
             android:layout_height="0.8dp"
-            android:background="#dae0f0"
+            android:alpha="0.5"
+            android:background="@color/taBlueGrey"
             android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
