@@ -166,4 +166,6 @@ data class Profile(
     var watchersCount: Int? = null,
     @SerializedName("private")
     var isPrivate: Boolean? = null,
+    @Transient
+    var showExpanded: Boolean = false,
 )
