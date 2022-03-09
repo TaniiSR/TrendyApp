@@ -46,6 +46,11 @@ object HiltDaggerVersion {
     const val HILT_VM = "1.0.0-alpha03"
 }
 
+object ThirdPartyVersions {
+    const val LOTTIE = "5.0.3"
+    const val SHIMMER = "0.5.0"
+}
+
 object TestDependenciesVersions {
     const val JUNIT4 = "4.13.2"
     const val MOCKK = "1.12.2"

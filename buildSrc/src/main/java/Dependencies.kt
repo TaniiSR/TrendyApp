@@ -98,6 +98,12 @@ object HiltDaggerDependencies {
     const val HILT_COMPILER = "androidx.hilt:hilt-compiler:${HiltDaggerVersion.HILT_VM}"
 }
 
+//ThirdParty
+object ThirdPartyDependencies {
+    const val LOTTIE = "com.airbnb.android:lottie:${ThirdPartyVersions.LOTTIE}"
+    const val SHIMMER = "com.facebook.shimmer:shimmer:${ThirdPartyVersions.SHIMMER}"
+}
+
 object TestDependencies {
     const val JUNIT4 = "junit:junit:${TestDependenciesVersions.JUNIT4}"
     const val MOCKK = "io.mockk:mockk:${TestDependenciesVersions.MOCKK}"

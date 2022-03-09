@@ -64,6 +64,12 @@ object DependenciesManager {
     val hiltKapt = arrayListOf<String>().apply {
         add(HiltDaggerDependencies.DAGGER_COMPILER)
     }
+
+    val thirdPartyImplementation = arrayListOf<String>().apply {
+        add(ThirdPartyDependencies.LOTTIE)
+        add(ThirdPartyDependencies.SHIMMER)
+    }
+
     val testingImplementation = arrayListOf<String>().apply {
         add(TestDependencies.JUNIT4)
         add(TestDependencies.MOCKK)
